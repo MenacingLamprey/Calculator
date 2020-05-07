@@ -1,0 +1,66 @@
+body{
+	background: gray;
+}
+
+#Calculator{
+	width: 300px;
+	height:500px;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 4, 1fr);
+	grid-template-rows: repeat(auto-fit, 6, 1fr);
+	grid-gap: 2px;
+
+	grid-template-areas: 
+	"temp-display display display display"
+	"add d1 d2 d3"
+	"subtract d4 d5 d6"
+	"multiply d7 d8 d9"
+	"divide d0 equals equals"
+	"power decimal clear clear";
+
+	border-style: solid;
+	margin: 100px auto;
+}
+
+#display{
+	grid-area: display;
+	border: 5px solid black;
+}
+
+#temp-display{
+	grid-area: temp-display;
+	border: 5px solid black;
+}
+
+#add{
+	grid-area: add;
+}
+
+#subtract{
+	grid-area: subtract;
+}
+
+#equals{
+	grid-area: equals;
+}
+
+#divide{
+	grid-area: divide;
+}
+
+#multiply{
+	grid-area: multiply;
+}
+
+#clear{
+	grid-area: clear;
+}
+
+#power{
+	grid-area: power;
+}
+
+#decimal{
+	grid-area: decimal
+}
